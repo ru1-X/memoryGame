@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Memory Game</title>
+		<script src="gameAdvanced.js"></script>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section>
+			<h1>Memory Game</h1>
+			<h2>A game by 200012230 for CS5003 P1</h2>
+		</section>
+
+		<div id="breedname"></div>
+		<div class="slider">
+			<button id="prev">Prev</button>
+			<button id="next">Next</button>
+		</div>
+
+		<select id="difficulty">
+			<option value="easy">easy</option>
+			<option value="normal">normal</option>
+			<option value="hard">hard</option>
+		</select>
+		<button id="btn">Start</button>
+		<button id="restart">Restart</button>
+		<div>Flip : <span id="times"> 0 </span></div>
+		<div>
+			<ul>
+				<li>Best scroe for easy level: <span id="best_easy"> 0 </span></li>
+				<li>Best scroe for normal level: <span id="best_normal"> 0 </span></li>
+				<li>Best scroe for hard level: <span id="best_hard"> 0 </span></li>
+			</ul>
+		</div>
+		<div id="board"></div>
+		<p>Please click "Restart" to restart the game😀</p>
+		<div id="myModal" class="modal">
+			<span id="close">&times;</span>
+			<div id="caption">
+				<h3 id="headerInfo"></h3>
+				<div>
+					Weight:
+					<div>&emsp;imperial: <span id="imperial_weight"></span></div>
+					<div>&emsp;metric: <span id="imperial_metric"></span></div>
+				</div>
+				<div>
+					Height:
+					<div>&emsp;imperial: <span id="imperial_height"></span></div>
+					<div>&emsp;metric: <span id="metric_height"></span></div>
+				</div>
+				<div>id: <span id="id"></span></div>
+				<div>name: <span id="name"></span></div>
+				<div>bred for: <span id="bred_for"></span></div>
+				<div>breed group: <span id="breed_group"></span></div>
+				<div>life span: <span id="life_span"></span></div>
+				<div>temperament: <span id="temperament"></span></div>
+				<div>reference image id: <span id="reference"></span></div>
+			</div>
+		</div>
+
+		<div class="progressbar">
+			<p>Your time progeress bar will show below once you start the game</p>
+			<ul>
+				<li>Easy : 20s</li>
+				<li>Normal : 40s</li>
+				<li>Difficulty: 60s</li>
+			</ul>
+			<div>
+				<div id="inner"></div>
+			</div>
+		</div>
+	</body>
+</html>

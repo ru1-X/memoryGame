@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+	margin: 10px;
+	font-family: "Courier New", Courier, monospace;
+}
+section {
+	background-color: gainsboro;
+}
+#breedname {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	border: plum solid;
+}
+#board {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(100px, 140px));
+	max-width: 800px;
+	grid-gap: 10px 10px;
+	grid-auto-columns: 1fr;
+}
+
+img {
+	object-fit: cover;
+	width: 100%;
+	max-height: auto;
+	border: blueviolet solid 1px;
+	align-self: center;
+}
+
+.progressbar {
+	width: 80%;
+	border: rgba(207, 207, 6, 0.938) dashed 1px;
+}
+
+/* time count down  */
+#inner {
+	height: 15px;
+	animation-play-state: paused;
+	animation-timing-function: linear;
+}
+@keyframes progressbar-countdown {
+	0% {
+		width: 100%;
+		background: green;
+	}
+	100% {
+		width: 0%;
+		background: red;
+	}
+}
+
+img {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+img:hover {
+	opacity: 0.7;
+}
+
+.modal {
+	border-radius: 5px;
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	height: 300px;
+	width: 300px;
+	transform: translate(-50%, -50%);
+	overflow: auto;
+	background-color: rgb(120, 108, 108);
+}
+
+#caption {
+	margin: auto;
+	display: grid;
+	width: 80%;
+	height: 150px;
+	max-width: 700px;
+	text-align: left;
+	color: whitesmoke;
+	padding: 10px;
+}
+
+#close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: whitesmoke;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+	color: rebeccapurple;
+	cursor: pointer;
+}
