@@ -1,5 +1,7 @@
 # memoryGame
 
+YOu can play the game here https://ru1-x.github.io/memoryGame/game.html
+
 1.	When the html is opened, all available breeds will be presented in the pink block. The block only contains ten breeds and the user can click “Prev” to check previous ten breeds or click “Next” to access the next ten breeds.
 2.	The user can select any number of breeds they like.
 3.	Then, the difficulty of the game can be selected : if the difficulty is easy, 4 dogs information contained the relevant images will be fetched and the game board will contain 8 cards. Similarly, normal difficulty corresponds to 6 dogs and 12 cards; hard difficulty corresponds to 9 dogs and 18 cards.
